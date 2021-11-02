@@ -22,7 +22,7 @@ class Product(models.Model):
     STATUS_CHOICES = (
         ('in stock', 'IN STOCK'),
         ('out of stock', 'OUT OF STOCK'),
-        ('aeaiting', 'AWAITING')
+        ('awaiting', 'AWAITING')
     )
 
     def __str__(self) -> str:
