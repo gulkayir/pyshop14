@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
-{% block title%}Product List{% endblock%}
+{% block title%}Search List{% endblock%}
 {% block content %}
-    {% for product in products %}
+<h1>Searh results:</h1>
+ {% for product in results %}
       <div class="card mb-3" style="max-width: 540px;">
   <div class="row g-0">
     <div class="col-md-4">
@@ -12,7 +13,6 @@
         <h5 class="card-title"><a href="{% url 'detail' product.id %}">{{ product.name }}</a></h5>
         <p class="card-text">{{ product.description|truncatechars:50 }}</p>
         <p class="card-text"><small class="text-muted">{{ product.status }}</small></p>
-        <a href="{% url 'cart_add' product.id %}" role="button" class="btn btn-primary ">ADD TO CART</a>
       </div>
     </div>
   </div>

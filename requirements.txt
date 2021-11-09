@@ -1,3 +1,6 @@
 django
-psycopq2-binary
+psycopg2-binary
 pillow
+python-decouple
+django-crispy-forms
+django-shopping-cart
